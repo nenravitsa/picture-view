@@ -11,3 +11,29 @@ C:\Users\Lenovo\Documents\GitHub\HW3winform\WpfApplication3\WpfApplication3\obj\
 C:\Users\Lenovo\Documents\GitHub\HW3winform\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.exe
 C:\Users\Lenovo\Documents\GitHub\HW3winform\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.pdb
 C:\Users\Lenovo\Documents\GitHub\HW3winform\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\App.g.cs
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\bin\Debug\PictureView.exe.config
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\bin\Debug\PictureView.exe
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\bin\Debug\PictureView.pdb
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\PictureView_MarkupCompile.cache
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\PictureView.g.resources
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\PictureView.exe
+C:\Users\Lenovo\Documents\GitHub\HW3winform\picture view\WpfApplication3\obj\Debug\PictureView.pdb
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\bin\Debug\PictureView.exe.config
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\PictureView.exe
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\PictureView.pdb
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\bin\Debug\PictureView.exe
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\bin\Debug\PictureView.pdb
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\App.g.cs
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\PictureView_MarkupCompile.cache
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\PictureView.g.resources
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+C:\Users\Lenovo\Documents\GitHub\HW3winform\pictureview\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache

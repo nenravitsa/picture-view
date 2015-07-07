@@ -60,6 +60,8 @@ namespace WpfApplication3 {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
+            SplashScreen splashScreen = new SplashScreen("resources/splash.png");
+            splashScreen.Show(true);
             WpfApplication3.App app = new WpfApplication3.App();
             app.InitializeComponent();
             app.Run();

@@ -1,8 +1,11 @@
 ﻿<Window x:Class="WpfApplication3.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="448.174" Width="707.447">
-    <Grid Margin="0,0,2,0">
+        Title="Picture view" Height="392" Width="707.447">
+    <Grid Margin="0,0,2,0" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" IsEnabled="False">
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Resources/08.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
@@ -12,15 +15,15 @@
         <ListBox Name ="picsListBox" HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="271" Margin="22,81,0,0" IsSynchronizedWithCurrentItem="True" Grid.ColumnSpan="2">
 
         </ListBox>
-        <Image Name ="container" HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="352" Margin="321,10,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+        <Image Name ="container" Stretch="Uniform"  HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="352" Margin="321,10,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
         <Button Name="leftButton" Content="&#60;" Background="White" FontSize="29" FontFamily="Showcard Gothic" Margin="336,216,323,161" BorderBrush="White" Grid.ColumnSpan="2"/>
         <Button Name="rightButton" Content=">" Background="White" FontSize="29" FontFamily="Showcard Gothic" Margin="635,216,24,161" BorderBrush="White" Grid.ColumnSpan="2"/>
         <Expander Name="about" Header="Info" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,261,0,0" Width="352" Height="87" Grid.ColumnSpan="2">
-            <Grid Background="#FFE5E5E5">
+            <Grid Background="#FF74E6AD">
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="340" Margin="10,10,0,0"><Run Text="All info about yo picture"/></TextBlock>
             </Grid>
         </Expander>
-        <Slider Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,200,0,0" Width="366" Value="200" Maximum="200" Minimum="100" Grid.ColumnSpan="2"/>
+        <Slider Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,200,0,0" Width="386" Value="200" Maximum="200" Minimum="100" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

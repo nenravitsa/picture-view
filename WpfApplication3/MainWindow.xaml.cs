@@ -30,6 +30,10 @@ namespace WpfApplication3
         List<BitmapImage> pics = new List<BitmapImage>();
         public MainWindow()
         {
+            //TimeSpan timeForSplash = new TimeSpan(1000);
+            //SplashScreen splashScreen = new SplashScreen("splash.png");
+            //splashScreen.Show(true);
+            //splashScreen.Close(timeForSplash);
             InitializeComponent();
             path.MouseDoubleClick += path_DoubleClick;
             picsListBox.MouseUp += picsListBox_MouseUp;
@@ -43,8 +47,7 @@ namespace WpfApplication3
             DialogResult result = way.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                path.Text = way.SelectedPath;
-                
+                path.Text = way.SelectedPath;         
                 picName = (Directory.GetFiles(path.Text, "*jpg")).ToList();
                 ShowImage(picName[0]);
                 progress.Value = 0;
@@ -54,6 +57,7 @@ namespace WpfApplication3
                 bw.DoWork += bw_DoWork;
                 bw.ProgressChanged += bw_ProgressChanged;
                 bw.RunWorkerAsync();
+                bw.Dispose();
             }
         }
 
@@ -76,22 +80,21 @@ namespace WpfApplication3
                 Thread.Sleep(50);
             
             }
-
+           bw.Dispose();
         }
 
-        private void getMeta()
+        private void GetMeta()
         {
-            //Stream imageStreamSource = new FileStream(picsListBox.SelectedItem.ToString(), FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
-            //    BitmapDecoder decoder = BitmapDecoder.Create(imageStreamSource, BitmapCreateOptions.PreservePixelFormat,
-            //        BitmapCacheOption.Default);
-            //    InPlaceBitmapMetadataWriter pngInplace = decoder.Frames[0].CreateInPlaceBitmapMetadataWriter();
+            Stream imageStreamSource = new FileStream(picsListBox.SelectedItem.ToString(), FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
+            BitmapDecoder decoder = BitmapDecoder.Create(imageStreamSource, BitmapCreateOptions.PreservePixelFormat,
+                BitmapCacheOption.Default);
+            InPlaceBitmapMetadataWriter jpgInplace = decoder.Frames[0].CreateInPlaceBitmapMetadataWriter();
 
-            //        if (pngInplace.CameraModel != null)
-            //            about.Content = pngInplace.CameraModel.ToString();
-            //        else
-            //            about.Content = "not found meta";
-            //imageStreamSource.Flush();
-            //imageStreamSource.Close();
+            if (jpgInplace.CameraModel != null && jpgInplace.Author!= null && jpgInplace.DateTaken != null)
+                about.Content = jpgInplace.CameraModel +" "+ jpgInplace.Author+ " " + jpgInplace.DateTaken ;
+            else
+                about.Content = "not found meta";
+            imageStreamSource.Close();
         }
 
         private void bw_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -111,9 +114,12 @@ namespace WpfApplication3
 
         public void picsListBox_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ShowImage(picsListBox.SelectedItem.ToString());
-            getMeta();
+            //GetMeta();
+            ShowImage(picsListBox.SelectedItem.ToString());     
         }
+
+
+
         private void LeftButton_Click(object sender, RoutedEventArgs e)
         {
             var prev = picsListBox.SelectedIndex - 1;
@@ -132,6 +138,7 @@ namespace WpfApplication3
             }
 
         }
+        
 
     }
 }
